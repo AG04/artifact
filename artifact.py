@@ -54,3 +54,4 @@ if __name__ == "__main__":
     print(f"{type(painting1).__name__=}")
 
     print(give_name_artifact())
+#abc
