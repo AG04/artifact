@@ -35,6 +35,10 @@ class Sculpture(Artifact):
     def is_old(self, limit=100):
         return self.calculate_age() > limit
 
+class Building(Artifact):
+    def __init__(self, name, date, architect):
+        super().__init__(name, date)
+        self.architect = architect
 
 def give_name_artifact():
     return f"artifact name: {__name__}"
